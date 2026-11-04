@@ -15,8 +15,10 @@ problems
 - Manual Bookkeeping Errors: Officer writes in book, mistakes happen, double-booking happens. System prevents this via StallAlreadyBookedException.
 
    http://localhost:8081/dashboard.html
-  CLASSES
-  1. User (abstract) - Abstract parent class for Trader and MarketOfficer with common fields id, name, phone.
+
+
+   CLASSES
+1. User (abstract) - Abstract parent class for Trader and MarketOfficer with common fields id, name, phone.
 2. Trader extends User - Represents a seller at Masala Market with nrc, goodsType, books stalls.
 3. Stall (abstract) - Abstract parent for TableStall/FloorSpace with stallId, location, abstract calculateDailyFee().
 4. TableStall extends Stall - Table type stall with daily fee K15 (implements polymorphism).
